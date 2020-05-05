@@ -1,4 +1,3 @@
-#include "libreria/claves.hpp"
 #include "Hardsting/Hardsting.hpp"
 #include "Hardsting/framework/arduino/FrameworkArduino.hpp"
 

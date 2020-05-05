@@ -1,14 +1,15 @@
 #ifndef HARDSTING_H
 #define HARDSTING_H
 
-#include "framework/Framework.hpp"
 #include <string>
+using namespace std;
+
+#include "framework/Framework.hpp"
+#include "palabras-claves.hpp"
 
 #define DELAY_COMPESACION 2
 #define BAJO 0x0
 #define ALTO 0x1
-
-using namespace std;
 
 class Hardsting {
 
