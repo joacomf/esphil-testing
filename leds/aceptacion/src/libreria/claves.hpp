@@ -1,7 +1,7 @@
-#define cuando {}
-#define entonces {}
-#define y_cuando {}
-#define y_ {}
+#define cuando hardsting
+#define entonces hardsting
+#define y_cuando hardsting
+#define y_ hardsting
 
 #define PRUEBA
 #define prueba void

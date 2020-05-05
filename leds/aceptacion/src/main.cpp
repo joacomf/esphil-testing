@@ -1,12 +1,14 @@
-#include <Arduino.h>
 #include "libreria/claves.hpp"
-#include "libreria/pasos.hpp"
+#include "Hardsting/Hardsting.hpp"
+#include "Hardsting/framework/arduino/FrameworkArduino.hpp"
 
 #define LED_ROJO 4
 #define BOTON_ROJO 5
 
+Hardsting* hardsting;
+
 void setup() {
-    Serial.begin(115200);
+    hardsting = new Hardsting(new FrameworkArduino());
 
     pinMode(LED_ROJO, INPUT);
     pinMode(BOTON_ROJO, OUTPUT);
@@ -14,23 +16,24 @@ void setup() {
 }
 
 prueba presionar_boton_enciende_led(){
-  empieza("presionar boton enciende led");
+  
+  hardsting->empieza("presionar boton enciende led");
 
-  cuando presiono_(BOTON_ROJO);
-  entonces deberia_encender_(LED_ROJO, 5);
+  cuando->presiono_(BOTON_ROJO);
+  entonces->deberia_encender_(LED_ROJO, 5);
 
-  termina("presionar boton enciende led");
+  hardsting->termina("presionar boton enciende led");
 }
 
 prueba presionar_boton_enciende_led_al_presionarlo_nuevamente_lo_apaga(){
-  empieza("presionar boton enciende led al presionarlo nuevamente lo apaga");
+  hardsting->empieza("presionar boton enciende led al presionarlo nuevamente lo apaga");
 
-  cuando presiono_(BOTON_ROJO);
-  entonces deberia_encender_(LED_ROJO, 5);
-  y_ suelto_(BOTON_ROJO);
-  entonces deberia_apagar_(LED_ROJO, 5);
+  cuando->presiono_(BOTON_ROJO);
+  entonces->deberia_encender_(LED_ROJO, 5);
+  y_->suelto_(BOTON_ROJO);
+  entonces->deberia_apagar_(LED_ROJO, 5);
 
-  termina("presionar boton enciende led al presionarlo nuevamente lo apaga");
+  entonces->termina("presionar boton enciende led al presionarlo nuevamente lo apaga");
 }
 
 void loop() {
