@@ -1,8 +1,7 @@
 #ifndef FRAMEWORK_H
 #define FRAMEWORK_H
 
-#include <string.h>
-
+#include <string>
 using namespace std;
 
 class Framework {
