@@ -32,7 +32,7 @@ prueba presionar_boton_enciende_led_al_presionarlo_nuevamente_lo_apaga(){
   y_->suelto_(BOTON_ROJO);
   entonces->deberia_apagar_(LED_ROJO, 5);
 
-  entonces->termina("presionar boton enciende led al presionarlo nuevamente lo apaga");
+  hardsting->termina("presionar boton enciende led al presionarlo nuevamente lo apaga");
 }
 
 void loop() {
