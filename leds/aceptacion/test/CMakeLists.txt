@@ -1,6 +1,6 @@
 add_executable(
     unit_tests
-    pasos_test.cpp
+    Hardsting_test.cpp
 )
 
 target_link_libraries(
