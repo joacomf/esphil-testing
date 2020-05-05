@@ -22,6 +22,9 @@ class Hardsting {
         bool deberia_encender_(int led, int segundos);
         bool deberia_apagar_(int led, int segundos);
 
+        void pin_de_entrada(int pin);
+        void pin_de_salida(int pin);
+
         void empieza(string nombre);
         void termina(string nombre);
 

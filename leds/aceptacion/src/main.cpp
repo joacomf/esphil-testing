@@ -10,9 +10,8 @@ Hardsting* hardsting;
 void setup() {
     hardsting = new Hardsting(new FrameworkArduino());
 
-    pinMode(LED_ROJO, INPUT);
-    pinMode(BOTON_ROJO, OUTPUT);
-    Serial.println("\nComienzan las pruebas\n");
+    hardsting->pin_de_entrada(LED_ROJO);
+    hardsting->pin_de_salida(BOTON_ROJO);
 }
 
 prueba presionar_boton_enciende_led(){

@@ -46,10 +46,18 @@ bool Hardsting::deberia_apagar_(int led, int segundos) {
   return false;
 }
 
+void Hardsting::pin_de_entrada(int pin) {
+  this->framework->configurar_pin_entrada(pin);
+}
+
+void Hardsting::pin_de_salida(int pin) {
+  this->framework->configurar_pin_salida(pin);
+}
+
 void Hardsting::empieza(string nombre) {
-    this->framework->consola("Empieza TEST: " + nombre);
+  this->framework->consola("Empieza TEST: " + nombre);
 }
 
 void Hardsting::termina(string nombre) {
-    this->framework->consola("Termina " + nombre + "\n");
+  this->framework->consola("Termina " + nombre + "\n");
 }

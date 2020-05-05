@@ -13,6 +13,9 @@ class Framework {
         virtual long milisegundos() = 0;
         virtual void demorar(int milisegundos) = 0;
         virtual void consola(string mensaje) = 0;
+
+        virtual void configurar_pin_entrada(int pin) = 0;
+        virtual void configurar_pin_salida(int pin) = 0;
 };
 
 #endif

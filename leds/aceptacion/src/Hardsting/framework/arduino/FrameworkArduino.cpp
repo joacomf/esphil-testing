@@ -23,3 +23,10 @@ void FrameworkArduino::demorar(int milisegundos){
 void FrameworkArduino::consola(string mensaje){
     Serial.println(mensaje.c_str());
 }
+
+void FrameworkArduino::configurar_pin_entrada(int pin){
+    pinMode(pin, INPUT);
+}
+void FrameworkArduino::configurar_pin_salida(int pin){
+    pinMode(pin, INPUT);
+}

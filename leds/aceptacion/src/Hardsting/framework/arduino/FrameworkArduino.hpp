@@ -16,6 +16,9 @@ class FrameworkArduino: public Framework{
         long milisegundos();
         void demorar(int milisegundos);
         void consola(string mensaje);
+
+        void configurar_pin_entrada(int pin);
+        void configurar_pin_salida(int pin);
 };
 
 #endif
