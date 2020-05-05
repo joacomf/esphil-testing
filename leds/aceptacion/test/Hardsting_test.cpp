@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
 
-TEST(prueba, trueEsTrue){
+TEST(HardstingTest, trueEsTrue){
     ASSERT_EQ(true, true);
 }
