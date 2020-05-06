@@ -29,7 +29,7 @@ class Hardsting {
         void empieza(string nombre);
         void termina(string nombre);
 
-        virtual ~Hardsting();
+        ~Hardsting();
 
 };
 

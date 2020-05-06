@@ -6,7 +6,6 @@ using namespace std;
 
 class Framework {
     public:
-        Framework();
         virtual void escribir(int pin, int valor) = 0;
         virtual int leer(int pin) = 0;
         virtual long milisegundos() = 0;
