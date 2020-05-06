@@ -1,6 +1,7 @@
 add_executable(
     unit_tests
-    Hardsting_test.cpp
+    Hardsting/Hardsting_test.cpp
+    mocks/framework/FrameworkMock.hpp
 )
 
 target_link_libraries(
